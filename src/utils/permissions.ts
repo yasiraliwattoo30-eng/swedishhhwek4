@@ -16,7 +16,7 @@ export const ROLE_PERMISSIONS: RolePermissions = {
   ],
   foundation_owner: [
     { screen: 'manager-dashboard' },
-    { screen: 'foundations' },
+    { screen: 'financial' },
     { screen: 'profile' }
   ],
   member: [
