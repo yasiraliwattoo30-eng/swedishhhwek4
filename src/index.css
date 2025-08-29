@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-200 text-secondary-800 hover:bg-secondary-300 focus:ring-secondary-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  /* Responsive utilities */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6;
+  }
+  
+  .text-responsive {
+    @apply text-sm sm:text-base;
+  }
+  
+  .heading-responsive {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+  
+  /* Mobile-first responsive design */
+  .mobile-menu {
+    @apply fixed inset-0 z-50 lg:hidden;
+  }
+  
+  .mobile-overlay {
+    @apply fixed inset-0 bg-gray-600 bg-opacity-75;
+  }
+  
+  .mobile-sidebar {
+    @apply relative flex-1 flex flex-col max-w-xs w-full bg-white;
+  }
+  
+  /* Chart responsiveness */
+  .chart-container {
+    @apply h-64 sm:h-80;
+  }
+  
+  /* Button responsiveness */
+  .btn-responsive {
+    @apply px-3 py-2 sm:px-4 sm:py-2 text-sm;
+  }
+  
+  /* Card responsiveness */
+  .card-responsive {
+    @apply p-4 sm:p-6;
+  }
+  
+  /* Form responsiveness */
+  .form-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6;
+  }
+  
+  /* Table responsiveness */
+  .table-responsive {
+    @apply overflow-x-auto;
+  }
+  
+  .table-responsive table {
+    @apply min-w-full;
+  }
+  
+  /* Navigation responsiveness */
+  .nav-responsive {
+    @apply flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4;
+  }
+}
