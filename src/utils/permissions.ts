@@ -22,9 +22,6 @@ export const ROLE_PERMISSIONS: RolePermissions = {
   member: [
     { screen: 'dashboard' },
     { screen: 'profile' },
-    { screen: 'grants' },
-    { screen: 'projects' },
-    { screen: 'meetings' }
   ]
 };
 
